@@ -8,12 +8,14 @@ $(document).ready(function () {
 function loadDataTable() {
     var rows = ''
     data.forEach(element => {
+
         rows += `
             <tr>
+                <td>${element.datetime}</td>
                 <td>${element.name}</td>
-                <td>${element.price}</td>
                 <td>${element.amount}</td>
-                <td>${element.date}</td>
+                <td>${element.unit}</td>
+                <td>${element.price}</td>
             </tr>
             `
     });
@@ -22,10 +24,15 @@ function loadDataTable() {
 }
 
 var data = [
-    { name: 'a', price: 200, amount: 20, date: '18/20/2016' },
-    { name: 'b', price: 200, amount: 20, date: '18/20/2016' },
-    { name: 'c', price: 200, amount: 20, date: '18/20/2016' },
-    { name: 'd', price: 200, amount: 20, date: '18/20/2016' },
-    { name: 'e', price: 200, amount: 20, date: '18/20/2016' },
-    { name: 'f', price: 200, amount: 20, date: '18/20/2016' },
+    { name: 'สุราขาว40ดีกรี 625มล.', amount: 50, unit: 'ขวด', price: 500, datetime: '18/20/2016 18:01:00' },
+    { name: 'สุราขาว40ดีกรี 625มล.', amount: 50, unit: 'ขวด', price: 500, datetime: '18/20/2016 18:01:00' },
+    { name: 'สุราขาว40ดีกรี 625มล.', amount: 50, unit: 'ขวด', price: 500, datetime: '18/20/2016 18:01:00' },
+    { name: 'สุราขาว40ดีกรี 625มล.', amount: 50, unit: 'ขวด', price: 500, datetime: '18/20/2016 18:01:00' },
+    { name: 'สุราขาว40ดีกรี 625มล.', amount: 50, unit: 'ขวด', price: 500, datetime: '18/20/2016 18:01:00' },
+    { name: 'สุราขาว40ดีกรี 625มล.', amount: 50, unit: 'ขวด', price: 500, datetime: '18/20/2016 18:01:00' },
+    { name: 'สุราขาว40ดีกรี 625มล.', amount: 50, unit: 'ขวด', price: 500, datetime: '18/20/2016 18:01:00' },
+    { name: 'สุราขาว40ดีกรี 625มล.', amount: 50, unit: 'ขวด', price: 500, datetime: '18/20/2016 18:01:00' },
+    { name: 'สุราขาว40ดีกรี 625มล.', amount: 50, unit: 'ขวด', price: 500, datetime: '18/20/2016 18:01:00' },
+    { name: 'สุราขาว40ดีกรี 625มล.', amount: 50, unit: 'ขวด', price: 500, datetime: '18/20/2016 18:01:00' },
+    { name: 'สุราขาว40ดีกรี 625มล.', amount: 50, unit: 'ขวด', price: 500, datetime: '18/20/2016 18:01:00' },
 ];
