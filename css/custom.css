@@ -1,0 +1,16 @@
+.navbar-default {
+    background-color: #db4437;
+    border-color: #e7e7e7;
+
+  }
+  #page-wrapper {
+    padding: 0 15px;
+    min-height: 568px;
+    background-color: #dfff80;
+  }
+  .center {
+      text-align: center;
+  }
+  .navbar-brand {
+    padding-top: 1px;
+}
