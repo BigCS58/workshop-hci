@@ -17,6 +17,12 @@
     <!-- MetisMenu CSS -->
     <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
+    <!-- DataTables CSS -->
+    <link href="../vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="../vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link href="../dist/css/sb-admin-2-big.css" rel="stylesheet">
 
@@ -32,84 +38,79 @@
 
 </head>
 
-<body>
+<body style="padding-top: 50px;">
 
     <div id="wrapper">
 
         <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0;">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">
-                    <i class="fa fa-home"></i> ร้านขายของชำ
-                </a>
-            </div>
-            <!-- /.navbar-header -->
+        <nav class="navbar navbar-default navbar-static-top navbar-fixed-top" role="navigation" style="margin-bottom: 0;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="blank.html">
+                        <i class="fa fa-home"> </i>ร้านขายของชำ
+                    </a>
+                </div>
+                <!-- /.navbar-header -->
 
-            <ul class="nav navbar-top-links navbar-right">
-                <li>
-                    <a href="buy.html">
-                        ประวัติการซื้อ
-                    </a>
-                    <!-- /.dropdown-messages -->
-                </li>
-                <!-- /.dropdown -->
-                <li class="dropdown">
-                    <a href="view.html">
-                        ภาพรวม
-                    </a>
-                </li>
-                <!-- /.dropdown -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        สถิติการขาย
-                        <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-alerts">
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-top-links navbar-right">
                         <li>
-                            <a href="#">
-                                การขายรายวัน
+                            <a href="buy.html">
+                                ประวัติการซื้อ
+                            </a>
+                            <!-- /.dropdown-messages -->
+                        </li>
+                        <!-- /.dropdown -->
+                        <li>
+                            <a href="blank.html">
+                                ภาพรวม
                             </a>
                         </li>
-                        <li class="divider"></li>
+                        <!-- /.dropdown -->
                         <li>
-                            <a href="#">
-                                การขายรายเดือน
+                            <a href="sell.html">
+                                สถิติการขาย
                             </a>
+                            <!-- /.dropdown-alerts -->
                         </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                การขายรายปี
+                        <!-- /.dropdown -->
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-user fa-fw"></i>
+                                <i class="fa fa-caret-down"></i>
                             </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-user fa-fw"></i> User Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-gear fa-fw"></i> Settings</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="login.html">
+                                        <i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                                </li>
+                            </ul>
+                            <!-- /.dropdown-user -->
                         </li>
+                        <!-- /.dropdown -->
                     </ul>
-                    <!-- /.dropdown-alerts -->
-                </li>
-                <!-- /.dropdown -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i>
-                        <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-user">
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-user fa-fw"></i> User Profile</a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-gear fa-fw"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="login.html">
-                                <i class="fa fa-sign-out fa-fw"></i> Logout</a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-user -->
-                </li>
-                <!-- /.dropdown -->
-            </ul>
+                </div>
+            </div>
+
+
+
             <!-- /.navbar-top-links -->
 
 
@@ -119,15 +120,16 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="page-header">Dashboard</h2>
+                    <h2 class="page-header">การสั่งซื้อ</h2>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
             <div class="row">
-                <div>
-                    <!-- code in this area. -->
+                <div class="col-lg-12">
+                    <h2>code here</h2>
                 </div>
+                <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
         </div>
@@ -135,6 +137,7 @@
 
     </div>
     <!-- /#wrapper -->
+
 
     <!-- jQuery -->
     <script src="../vendor/jquery/jquery.min.js"></script>
@@ -145,8 +148,16 @@
     <!-- Metis Menu Plugin JavaScript -->
     <script src="../vendor/metisMenu/metisMenu.min.js"></script>
 
+    <!-- DataTables JavaScript -->
+    <script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script src="../vendor/datatables-responsive/dataTables.responsive.js"></script>
+
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
+
+    <!-- custom script -->
+    <script src="../js/custom-buy.js"></script>
 
 </body>
 
