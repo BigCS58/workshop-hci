@@ -5,12 +5,23 @@ $(document).ready(function () {
     });
 });
 
+function deletedData(btn){
+    var row = btn.parentNode.parentNode;
+    setTimeout(function(){
+        $("#deletedModal").modal("hide");
+    }, 1000);
+    row.parentNode.removeChild(row);
+    
+    
+}
+
+
 function loadDataTable() {
     var rows = ''
     data.forEach(element => {
 
         rows += `
-            <tr>
+            <tr id="myData">
                 <td>${element.date}</td>
                 <td>${element.name}</td>
                 <td>${element.amount}</td>
@@ -18,12 +29,21 @@ function loadDataTable() {
                 <td>${element.amountPerunit}</td>
                 <td>${element.price}</td>
                 <td ${element.status == 'ยังไม่จัดส่ง' ? 'style=\"color:red\"' : 'style=\"color:green\"'}>${element.status}</td>
+                <td style="text-align:center;">
+                    <button class="btn btn-success" data-toggle="modal" data-target="#myModal" contenteditable="false">แก้ไข</button>
+                    <button class="btn btn-danger"   data-toggle="modal" data-target="#deletedModal" onclick="deletedData(this)">ลบ</button>
+                </td>
             </tr>
             `
     });
 
     $('#data-buy tr:last').after(rows);
 }
+
+
+
+
+
 
 var data = [
     { name: 'สุราขาว40ดีกรี 625มล.', amount: 50, unit: 'ลัง', amountPerunit: 14, price: 500, date: '18/20/2016', status: 'จัดส่งแล้ว' },
