@@ -110,10 +110,13 @@
                                         <th class="center">จำนวนต่อหน่วย</th>
                                         <th class="center">ราคารวม</th>
                                         <th class="center">สถานะการจัดส่ง</th>
+                                        <th class="center">จัดการข้อมูล</th>
+
+
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                    <tr id="myData">
                                         <td>18/20/2016</td>
                                         <td>โซดา สิงห์</td>
                                         <td>24</td>
@@ -121,6 +124,11 @@
                                         <td>30</td>
                                         <td>1200</td>
                                         <td style="color: green;">จัดส่งแล้ว</td>
+                                        <td style="text-align:center;">
+                                            <button class="btn btn-success" data-toggle="modal" data-target="#myModal" contenteditable="false">แก้ไข</button>
+                                            <button class="btn btn-danger"  data-toggle="modal" data-target="#deletedModal" onclick="deletedData(this)">ลบ</button>
+
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -189,7 +197,17 @@
         </div>
     </div>
 
-
+    <div class="modal fade" id="deletedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="alert alert-success alert-dismissable" style="margin-bottom: 0px;">
+                    <!-- <button type="button" style="text-align: center;" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
+                    <h1 style="text-align: center;">ลบข้อมูลสำเร็จแล้ว</h1>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- jQuery -->
