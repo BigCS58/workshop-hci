@@ -42,3 +42,8 @@ input, select, option{
 
 }
 
+.active {
+  background-color: #eee;
+  color: #23527c;
+}
+
