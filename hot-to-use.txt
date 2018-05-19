@@ -1,2 +1,0 @@
-- Search keyword "code in this area." for coding.
-- Some file include <link href="../dist/css/sb-admin-2.css" rel="stylesheet"> change this to <link href="../dist/css/sb-admin-2-big.css" rel="stylesheet">

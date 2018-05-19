@@ -31,6 +31,11 @@ h2{
   font-weight: bold;
 }
 
+.modal-header, .modal-footer {
+  background-color: #db4437;
+  color: white;
+}
+
 input, select, option{
   font-family: 'Athiti', sans-serif !important; 
   font-size: 15px !important; 
