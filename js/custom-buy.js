@@ -1,4 +1,10 @@
 $(document).ready(function () {
+    $( "#date-add" ).datepicker({
+        format: 'dd/mm/yyyy',
+        regional: "th" , 
+    });
+    $.datepicker.setDefaults($.datepicker.regional['th']);
+
     loadDataTable();
     $('#data-buy').DataTable({
         responsive: true
