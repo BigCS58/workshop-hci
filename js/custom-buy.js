@@ -32,7 +32,7 @@ function loadDataTable() {
                 <td>${element.price}</td>
                 <td ${element.status == 'ยังไม่จัดส่ง' ? 'style=\"color:red\"' : 'style=\"color:green\"'}>${element.status}</td>
                 <td style="text-align:center;">
-                    <button class="btn btn-warning" data-toggle="modal" data-target="#myModal" contenteditable="false">แก้ไข</button>
+                    <button class="btn btn-warning" data-toggle="modal" data-target="#modal-edit" contenteditable="false">แก้ไข</button>
                     <button class="btn btn-danger"   data-toggle="modal" data-target="#deletedModal" onclick="deletedData(this)">ลบ</button>
                 </td>
             </tr>
